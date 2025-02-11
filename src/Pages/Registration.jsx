@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import image from "../assets/Images/Registartion_page/Logo.png";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -26,8 +27,7 @@ const RegisterForm = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-2xl shadow-md max-w-md w-full">
         <div className="flex items-center justify-center mb-6">
-          <img src="/logo.png" alt="TMS Logo" className="h-10" />
-          <h1 className="text-xl font-semibold ml-2 text-blue-600">TMS</h1>
+          <img src={image}/>
         </div>
         <h2 className="text-center text-lg font-semibold text-gray-800">
           Welcome to
@@ -95,7 +95,7 @@ const RegisterForm = () => {
                 className="absolute inset-y-0 right-3 flex items-center text-gray-600"
                 onClick={togglePasswordVisibility}
               >
-                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                {/* {showPassword ? <EyeOff size={20} /> : <Eye size={20} />} */}
               </button>
             </div>
             <div className="relative w-1/2">
@@ -115,7 +115,7 @@ const RegisterForm = () => {
                 className="absolute inset-y-0 right-3 flex items-center text-gray-600"
                 onClick={toggleConfirmPasswordVisibility}
               >
-                {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                {/* {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />} */}
               </button>
             </div>
           </div>
